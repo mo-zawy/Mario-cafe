@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mario Cafe</title>    
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-firestore.js"></script>
+        
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    
+    
+    
+
+    </head>
+    <body>
+
+        <div class="container">
+            <div class="row">
+                <div class="card mt-5 col-12">
+
+                    <div class="card-header h2 text-center text-danger">Mario Cafe</div>
+                    <div class="card-body bg-dark">
+                        <form id="add-cafe-form" class="row" >
+                            
+                                <input class="col-4 mr-1 form-control" type="text" placeholder="Cafe Name" name="name">
+                                <input class="col-4 mr-1 form-control" type="text" placeholder="City Name" name="city">
+                                <button class="col-7 col-md-3 btn btn-primary offset-3 offset-md-0" type="submit">add cafe</button>
+
+                        </form>
+                        <div class="col-10 offset-1 mt-3 bg-dark" id="cafe-list">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+        <script>
+            // Your web app's Firebase configuration
+            var firebaseConfig = {
+            apiKey: "AIzaSyBUpxVzWR0wwF67IdrWDqqIpl_Ss1gaLWk",
+            authDomain: "mario-cafe-6cf45.firebaseapp.com",
+            databaseURL: "https://mario-cafe-6cf45.firebaseio.com",
+            projectId: "mario-cafe-6cf45",
+            storageBucket: "mario-cafe-6cf45.appspot.com",
+            messagingSenderId: "907286288336",
+            appId: "1:907286288336:web:95022a2ff1813e4bcc8bd5"
+            };
+            // Initialize Firebase
+            firebase.initializeApp(firebaseConfig);
+            const db =firebase.firestore();
+
+        </script>
+        <script src="app.js"></script>
+    </body>
+</html>
